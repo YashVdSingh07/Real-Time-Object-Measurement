@@ -1,57 +1,107 @@
 # Real-Time-Object-Measurement
 
-📌 Overview
-This project uses OpenCV to measure object dimensions in real-time from a webcam or local image. It detects contours, applies perspective transformation, and annotates object dimensions in centimeters.
 
+## 📌 Overview  
+This project utilizes **OpenCV** to measure object dimensions in real time using a **webcam** or a **local image**. It detects contours, applies **perspective transformation**, and overlays the object’s **height and width** in centimeters.  
 
-📸 Example Output
-(Add sample images below)
-📷 Original Image
+---
 
-📷 Processed Output with Measurements
+## 📸 Example Output  
 
+### 🔹 Original Input  
+_(Replace with an actual image)_  
+![Original Image](path/to/original_image.jpg)  
 
+### 🔹 Processed Output with Measurements  
+_(Replace with an actual image)_  
+![Processed Image](path/to/processed_image.jpg)  
 
-🔧 Features
-✅ Works with webcam or local images
-✅ Automatic contour detection & perspective correction
-✅ Real-time measurements with annotations
+---
 
+## 🔧 Features  
+✅ Works with **Webcam & Local Images**  
+✅ **Real-Time Measurement** & Object Detection  
+✅ **Perspective Correction** for Accurate Scaling  
+✅ **Measurement Overlay in cm**  
 
+---
 
-🛠️ Technologies Used
-Python 🐍
-OpenCV 🎥
-NumPy ➗
+## 🛠️ Technologies Used  
+- **Python** 🐍  
+- **OpenCV** 🎥 (Image Processing & Contour Detection)  
+- **NumPy** ➗ (Mathematical Computations)  
 
+---
 
+## 🚀 How It Works  
 
-🚀 How It Works
-Select Input → Webcam (1) or Local Image (0)
-Detect Contours → Identifies objects based on area threshold
-Measure & Annotate → Converts pixel distance to centimeters
-Display Results → Shows annotated dimensions in a window
+### 🔹 Step 1: Input Selection  
+- The program asks the user:  
+  ```
+  Do you want to use the webcam? Choose 1 for webcam - 0 for local image:
+  ```
+- If **1** → The webcam is activated.  
+- If **0** → The script loads an image from the local directory.  
 
+📷 _Example of webcam feed_  
+![Webcam Input](path/to/webcam_input.jpg)  
 
-📌 Usage
-1️⃣ Install Dependencies
-bash
-Copy
-Edit
+---
+
+### 🔹 Step 2: Contour Detection  
+- The image is converted to **grayscale**, blurred, and processed using **Canny edge detection** to find contours.  
+
+📷 _Contours detected in the image_  
+![Contours Detected](path/to/contours_detected.jpg)  
+
+---
+
+### 🔹 Step 3: Perspective Transformation  
+- The largest detected object (e.g., A4 paper) is used as a reference.  
+- The image is **warped** to correct for perspective distortion.  
+
+📷 _Warped Image for precise measurement_  
+![Warped Image](path/to/warped_image.jpg)  
+
+---
+
+### 🔹 Step 4: Measurement & Annotation  
+- Object dimensions are computed using pixel-to-cm scaling.  
+- Measurements are **annotated** on the output image.  
+
+📷 _Final measurement overlay_  
+![Final Measurement](path/to/final_measurement.jpg)  
+
+---
+
+## 📌 Installation & Usage  
+
+### 1️⃣ Install Dependencies  
+```bash
 pip install opencv-python numpy
-2️⃣ Run the Script
-bash
-Copy
-Edit
+```  
+
+### 2️⃣ Run the Script  
+```bash
 python ObjectMeasurement.py
-3️⃣ View Measurements
-Object dimensions appear in real-time
-Press Esc to exit
-🔍 Customization
-Adjust minArea in utlis.py for different object sizes
-Modify scale for accurate calibration
+```  
 
+### 3️⃣ View Measurements  
+- The processed image will display the **object's height & width** in centimeters.  
+- Press **Esc** to exit.  
 
+---
 
-🏆 Credits
-Developed by Yashvardhan Singh 🎯
+## 🔍 Customization  
+- Modify `minArea` in `utlis.py` to detect different object sizes.  
+- Adjust `scale` for accurate calibration.  
+- Change `path` in `ObjectMeasurement.py` to use different images.  
+
+---
+
+## 🏆 Credits  
+Developed by **Yashvardhan Singh** 🎯  
+
+---
+
+Replace `path/to/image.jpg` with actual image file paths before using the README. Let me know if you want any modifications! 🚀
