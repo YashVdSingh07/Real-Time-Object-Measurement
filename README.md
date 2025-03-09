@@ -42,16 +42,12 @@ _(Replace with an actual image)_
 - If **1** → The webcam is activated.  
 - If **0** → The script loads an image from the local directory.  
 
-📷 _Example of webcam feed_  
-![Webcam Input](path/to/webcam_input.jpg)  
 
 ---
 
 ### 🔹 Step 2: Contour Detection  
 - The image is converted to **grayscale**, blurred, and processed using **Canny edge detection** to find contours.  
-
-📷 _Contours detected in the image_  
-![Contours Detected](path/to/contours_detected.jpg)  
+ 
 
 ---
 
@@ -59,8 +55,6 @@ _(Replace with an actual image)_
 - The largest detected object (e.g., A4 paper) is used as a reference.  
 - The image is **warped** to correct for perspective distortion.  
 
-📷 _Warped Image for precise measurement_  
-![Warped Image](path/to/warped_image.jpg)  
 
 ---
 
@@ -68,8 +62,6 @@ _(Replace with an actual image)_
 - Object dimensions are computed using pixel-to-cm scaling.  
 - Measurements are **annotated** on the output image.  
 
-📷 _Final measurement overlay_  
-![Final Measurement](path/to/final_measurement.jpg)  
 
 ---
 
