@@ -10,7 +10,7 @@ This project utilizes **OpenCV** to measure object dimensions in real time using
 
 ### 🔹 Original Input  
 _(Replace with an actual image)_  
-![Original Image](1.jpg)  
+![](1.jpg)  
 
 ### 🔹 Processed Output with Measurements  
 _(Replace with an actual image)_  
