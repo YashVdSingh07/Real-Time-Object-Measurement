@@ -10,7 +10,7 @@ This project utilizes **OpenCV** to measure object dimensions in real time using
 
 ### 🔹 Original Input  
 _(Replace with an actual image)_  
-![Original Image](path/to/original_image.jpg)  
+![Original Image](1.jpg)  
 
 ### 🔹 Processed Output with Measurements  
 _(Replace with an actual image)_  
@@ -102,6 +102,3 @@ python ObjectMeasurement.py
 ## 🏆 Credits  
 Developed by **Yashvardhan Singh** 🎯  
 
----
-
-Replace `path/to/image.jpg` with actual image file paths before using the README. Let me know if you want any modifications! 🚀
